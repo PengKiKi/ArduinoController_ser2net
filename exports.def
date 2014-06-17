@@ -1,0 +1,20 @@
+LIBRARY	"socket"
+EXPORTS
+	Init
+	Connect
+	Connected
+	cleanup
+	IsArmed
+	Reconnect
+	GetVoltage
+	GetTemperature
+	GetMotor1Fault
+	GetMotor2Fault
+	GetMotor1Current
+	GetMotor2Current
+	GetLastReportedTimeAlive
+	UnArm
+	Arm
+	Run
+	SetSpeed
+	SetBrake

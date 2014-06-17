@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C2EDA8C0-8341-494B-A030-50620DBE7E41}</ProjectGuid>
+    <RootNamespace>Blink</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Programs\arduino-1.0.5-r2\libraries\;C:\Programs\arduino-1.0.5-r2\libraries\DVMS;C:\Programs\arduino-1.0.5-r2\libraries\EEPROM;C:\Programs\arduino-1.0.5-r2\libraries\Esplora;C:\Programs\arduino-1.0.5-r2\libraries\Ethernet;C:\Programs\arduino-1.0.5-r2\libraries\Firmata;C:\Programs\arduino-1.0.5-r2\libraries\GSM;C:\Programs\arduino-1.0.5-r2\libraries\IRremote;C:\Programs\arduino-1.0.5-r2\libraries\LiquidCrystal;C:\Programs\arduino-1.0.5-r2\libraries\Robot_Control;C:\Programs\arduino-1.0.5-r2\libraries\Robot_Motor;C:\Programs\arduino-1.0.5-r2\libraries\SD;C:\Programs\arduino-1.0.5-r2\libraries\Servo;C:\Programs\arduino-1.0.5-r2\libraries\SoftwareSerial;C:\Programs\arduino-1.0.5-r2\libraries\SPI;C:\Programs\arduino-1.0.5-r2\libraries\Stepper;C:\Programs\arduino-1.0.5-r2\libraries\TFT;C:\Programs\arduino-1.0.5-r2\libraries\VS;C:\Programs\arduino-1.0.5-r2\libraries\WiFi;C:\Programs\arduino-1.0.5-r2\libraries\Wire;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Programs\arduino-1.0.5-r2\libraries\;C:\Programs\arduino-1.0.5-r2\libraries\DVMS;C:\Programs\arduino-1.0.5-r2\libraries\EEPROM;C:\Programs\arduino-1.0.5-r2\libraries\Esplora;C:\Programs\arduino-1.0.5-r2\libraries\Ethernet;C:\Programs\arduino-1.0.5-r2\libraries\Firmata;C:\Programs\arduino-1.0.5-r2\libraries\GSM;C:\Programs\arduino-1.0.5-r2\libraries\IRremote;C:\Programs\arduino-1.0.5-r2\libraries\LiquidCrystal;C:\Programs\arduino-1.0.5-r2\libraries\Robot_Control;C:\Programs\arduino-1.0.5-r2\libraries\Robot_Motor;C:\Programs\arduino-1.0.5-r2\libraries\SD;C:\Programs\arduino-1.0.5-r2\libraries\Servo;C:\Programs\arduino-1.0.5-r2\libraries\SoftwareSerial;C:\Programs\arduino-1.0.5-r2\libraries\SPI;C:\Programs\arduino-1.0.5-r2\libraries\Stepper;C:\Programs\arduino-1.0.5-r2\libraries\TFT;C:\Programs\arduino-1.0.5-r2\libraries\VS;C:\Programs\arduino-1.0.5-r2\libraries\WiFi;C:\Programs\arduino-1.0.5-r2\libraries\Wire;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Programs\arduino-1.0.5-r2\hardware\arduino\cores\arduino;C:\Programs\arduino-1.0.5-r2\hardware\arduino\variants\standard;C:\Programs\arduino-1.0.5-r2\libraries;C:\Programs\arduino-1.0.5-r2\hardware\arduino\libraries;C:\Programs\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Rafal\Documents\Arduino\libraries;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\avr\include\;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\avr\include\avr\;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\avr\;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Rafal\Documents\Arduino\Blink\Visual Micro\.Blink.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=105;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Programs\arduino-1.0.5-r2\hardware\arduino\cores\arduino;C:\Programs\arduino-1.0.5-r2\hardware\arduino\variants\standard;C:\Programs\arduino-1.0.5-r2\libraries;C:\Programs\arduino-1.0.5-r2\hardware\arduino\libraries;C:\Programs\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Rafal\Documents\Arduino\libraries;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\avr\include\;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\avr\include\avr\;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\avr\;c:\programs\arduino-1.0.5-r2\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\development\ArduinoController_ser2net\Arduino\Visual Micro\.Arduino.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=105;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Blink.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Visual Micro\.Arduino.vsarduino.h" />
+    <ClInclude Include="Visual Micro\.Blink.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM5" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
